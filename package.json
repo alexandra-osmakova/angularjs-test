@@ -3,6 +3,7 @@
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
+    "clean-css": "^4.2.1",
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
     "grunt-concurrent": "^1.0.0",
@@ -26,13 +27,34 @@
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^2.0.0",
     "jit-grunt": "^0.9.1",
-    "time-grunt": "^1.0.0",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "time-grunt": "^1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "angular-route": "^1.6.4"
+    "@hapi/cryptiles": "^4.2.1",
+    "angular-route": "^1.7.8",
+    "base64-url": "^2.3.2",
+    "braces": "^3.0.2",
+    "cli": "^1.0.1",
+    "debug": "^4.1.1",
+    "diff": "^4.0.1",
+    "fresh": "^0.5.2",
+    "handlebars": "^4.4.2",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
+    "mime": "^2.4.4",
+    "minimatch": "^3.0.4",
+    "morgan": "^1.9.1",
+    "negotiator": "^0.6.2",
+    "request": "^2.88.0",
+    "shell-quote": "^1.7.2",
+    "tar-fs": "^2.0.0",
+    "tunnel-agent": "^0.6.0",
+    "uglify-js": "^3.6.0",
+    "underscore.string": "^3.3.5"
   }
 }
