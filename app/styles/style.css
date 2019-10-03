@@ -12,7 +12,7 @@ body {
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   overflow-x: hidden;
   margin: 0;
 }
@@ -28,30 +28,54 @@ label {
 }
 
 input {
+  padding: 10px;
   outline: none;
   border: 1px solid #bfbfbf;
-  padding: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    color: #ffffff;
-    background-color: #4d4dff;
-    outline: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #4d4dff;
+  outline: none;
 }
 
 header {
-  padding: 32px;
-  background-color: #e6e6ff;
-  color: black;
-  font-size: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 32px;
+  background-color: #e6e6ff;
+  color: #000000;
+  font-size: 22px;
 }
 
 .centered-item {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main-content {
+  padding: 32px 22px;
+}
+
+.main-content__item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #e6e6ff;
+  cursor: pointer;
+}
+
+.main-content__item:hover {
+  background-color: #e6e6ff;
+}
+
+.main-content__item:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.main-content__item span {
+  margin-right: 16px;
 }

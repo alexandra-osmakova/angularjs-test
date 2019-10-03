@@ -7,8 +7,20 @@
     <section ng-controller="UserController">
       <header>
         <span>Hi, {{ username | capitalize }}!</span>
-        <span> {{ weather.currentTemp }}, {{ weather.currentDescription | capitalize }}</span>
+        <span>
+          {{ weather.currentTemp }},
+          {{ weather.currentDescription | capitalize }}</span
+        >
       </header>
+      <div class="main-content" ng-if="todoList">
+        <h2>Plan for today</h2>
+        <div class="main-content__item" ng-repeat="item in todoList">
+          <h5>
+            <span>{{ item.id }}</span>
+            <h5>{{ item.title }}</h5>
+          </h5>
+        </div>
+      </div>
     </section>
   </body>
 </html>
