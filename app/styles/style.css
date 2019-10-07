@@ -27,27 +27,24 @@ label {
   margin-bottom: 20px;
 }
 
-input {
+input,
+textarea {
   padding: 10px;
   outline: none;
   border: 1px solid #bfbfbf;
 }
 
-button {
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #4d4dff;
-  outline: none;
-}
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 32px;
   background-color: #e6e6ff;
   color: #000000;
   font-size: 22px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .centered-item {
@@ -78,4 +75,20 @@ header {
 
 .main-content__item span {
   margin-right: 16px;
+}
+
+.main-content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
 }

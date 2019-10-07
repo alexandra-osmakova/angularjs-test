@@ -6,18 +6,32 @@
   <body>
     <section ng-controller="UserController">
       <header>
-        <span>Hi, {{ username | capitalize }}!</span>
-        <span>
-          {{ weather.currentTemp }},
-          {{ weather.currentDescription | capitalize }}</span
-        >
+        <div class="header-content">
+          <span>Hi, {{ username | capitalize }}!</span>
+          <span>
+            {{ weather.currentTemp }},
+            {{ weather.currentDescription | capitalize }}</span
+          >
+        </div>
       </header>
       <div class="main-content" ng-if="todoList">
-        <h2>Plan for today</h2>
-        <div class="main-content__item" ng-repeat="item in todoList">
+        <div class="main-content__header">
+          <h2>Plan for today</h2>
+          <button
+            ng-click="openFullInfo(undefined, true)"
+            class="btn btn-primary"
+          >
+            Add
+          </button>
+        </div>
+        <div
+          ng-click="openFullInfo(item, false)"
+          class="main-content__item"
+          ng-repeat="item in todoList"
+        >
           <h5>
             <span>{{ item.id }}</span>
-            <h5>{{ item.title }}</h5>
+            <span>{{ item.title }}</span>
           </h5>
         </div>
       </div>

@@ -1,7 +1,5 @@
 var app = angular
-  .module("app-todo", [
-    "ngRoute"
-  ])
+  .module("app-todo", ["ngRoute", "ui.bootstrap"])
   .config(function($routeProvider) {
     $routeProvider.when("/", {
       templateUrl: "views/login-template/login-template.html",
